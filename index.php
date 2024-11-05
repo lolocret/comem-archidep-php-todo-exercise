@@ -1,5 +1,14 @@
 <?php
 
+define('BASE_URL', getenv('TODOLIST_BASE_URL') ?: '/');
+
+// Database connection parameters.
+define('DB_USER', getenv('TODOLIST_DB_USER'));
+define('DB_PASS', getenv('TODOLIST_DB_PASS'));
+define('DB_NAME', getenv('TODOLIST_DB_NAME'));
+define('DB_HOST', getenv('TODOLIST_DB_HOST'));
+define('DB_PORT', getenv('TODOLIST_DB_PORT'));
+
 // The base path under which the application is exposed. For example, if you are
 // accessing the application at
 // "http://localhost:8888/comem-archidep-php-todo-exercise/", then BASE_URL
